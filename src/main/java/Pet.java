@@ -13,37 +13,8 @@ public class Pet {
         this.name = name;
     }
 
-    public void speak() {
+    public String speak() {
         System.out.println("Makes sound");
-    }
-}
-
-class Cat extends Pet {
-    public Cat(String name) {
-        super(name);
-    }
-    @Override
-    public void speak() {
-        System.out.println("Meow");
-        }
-    }
-
-class Dog extends Pet {
-    public Dog(String name) {
-        super(name);
-    }
-    @Override
-    public void speak() {
-        System.out.println("Ruff");
-    }
-}
-
-class Parrot extends Pet {
-    public Parrot(String name) {
-        super(name);
-    }
-    @Override
-    public void speak() {
-        System.out.println("Stretch");
+        return null;
     }
 }
