@@ -1,31 +1,49 @@
 public class Pet {
+    private String name;
 
-    void speak() {
+    public Pet(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void speak() {
         System.out.println("Makes sound");
     }
+}
 
-    void name() {
-        System.out.println("Name");
+class Cat extends Pet {
+    public Cat(String name) {
+        super(name);
     }
-
-    static class Cat extends Pet {
-        @Override
-        void speak() {
-            System.out.println("Meow");
+    @Override
+    public void speak() {
+        System.out.println("Meow");
         }
     }
 
-    static class Dog extends Pet {
-        @Override
-        void speak() {
-            System.out.println("Ruff");
-        }
+class Dog extends Pet {
+    public Dog(String name) {
+        super(name);
     }
+    @Override
+    public void speak() {
+        System.out.println("Ruff");
+    }
+}
 
-    static class Parrot extends Pet {
-        @Override
-        void speak() {
-            System.out.println("Scretch");
-        }
+class Parrot extends Pet {
+    public Parrot(String name) {
+        super(name);
+    }
+    @Override
+    public void speak() {
+        System.out.println("Stretch");
     }
 }
