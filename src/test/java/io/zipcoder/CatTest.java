@@ -10,8 +10,7 @@ public class CatTest {
         //Given
         String expectedName = "";
         //When
-        Cat cat = new Cat(null);
-        cat.setName(expectedName);
+        Cat cat = new Cat(expectedName);
         String actualName = cat.getName();
         //Then
         Assert.assertEquals(expectedName, actualName);
