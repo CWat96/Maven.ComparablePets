@@ -16,4 +16,16 @@ public class CatTest {
         Assert.assertEquals(expectedName, actualName);
 
     }
+
+    @Test
+    public void TestConstruction1() {
+        //Given
+        String expectedName = "Thomas";
+        //When
+        Cat cat = new Cat(expectedName);
+        String actualName = cat.getName();
+        //Then
+        Assert.assertEquals(expectedName, actualName);
+
+    }
 }
